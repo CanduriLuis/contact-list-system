@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Header*/
+header {
+    padding: 2px;
+    align-content: center;
+    width: 100vw;
+    padding-bottom: 10px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.services .text-center {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.callout {
+    display: flex;
+    align-items: center;
+}
+
+/* Portfolio */
+.portfolio .text-center .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Call to action */
+.call-to-action .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 954px){
+    .text-vertical-center h1, .text-vertical-center h3, aside.call-to-action.bg-primary h1, aside.call-to-action.bg-primary h2, aside.call-to-action.bg-primary h3{
+        width: 75vw;
+        margin-bottom: 20px;
+    }
+}
